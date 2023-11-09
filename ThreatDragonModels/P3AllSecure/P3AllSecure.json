@@ -1817,8 +1817,8 @@
                 "text": "Krypto-\nStandartsofware"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1833,8 +1833,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "e06b8d25-57c1-42dc-96b7-542e46f075d4",
+                  "title": "Verschlüsselung ist Angreifer bekannt",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Angreifer kennt Verschlüsselung und kann Daten ändern und wieder verschlüsseln\nAngriffsvektor: Fehlende/ Schlechte Verschlüsselung\nAttack Pattern ID: 97 Cryptanalysis\nGegenmaßnahme: This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features. \n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1951,6 +1965,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
