@@ -1459,12 +1459,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Angriffsverktor: Kontoübernahme\nAngreifer bekommt Handy eines Nutzers und kann so an den OTT kommen\nAttack Pattern ID: 507\n",
+                  "description": "Angriffsverktor: Kontoübernahme\nAngreifer bekommt Handy eines Nutzers und kann so an den OTT kommen\nAttack Pattern ID: 507\nD: 2 R: 2 E: 3 A: 1 D: 1",
                   "mitigation": "Taktik: Privileged Account Management M1026; User Account Management  M1018 ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
-                  "score": ""
+                  "score": "2"
                 }
               ]
             }
@@ -1793,12 +1793,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer verschlüsselt OTTs \t\t\nCAPEC-39: Manipulating Opaque Client-based Data Tokens",
+                  "description": "Angreifer verschlüsselt OTTs \t\t\nCAPEC-39: Manipulating Opaque Client-based Data Tokens\n\n\nD: 7 R: 6 E: 5 A: 9 D: 4",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 24,
-                  "score": ""
+                  "score": "6"
                 }
               ]
             }
