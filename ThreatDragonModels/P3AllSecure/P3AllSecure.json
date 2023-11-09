@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 190,
-              "y": 100
+              "x": 130,
+              "y": 15
             },
             "size": {
               "width": 112.5,
@@ -98,12 +98,12 @@
                 "y": 60
               },
               {
-                "x": 590,
-                "y": 40
+                "x": 600,
+                "y": 110
               },
               {
-                "x": 620,
-                "y": 60
+                "x": 680,
+                "y": 90
               }
             ]
           },
@@ -208,51 +208,6 @@
                 "y": -280
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "12fc39ca-1751-4705-8ed2-4cbeeeebbc9d",
-            "labels": [
-              "Login"
-            ],
-            "source": {
-              "x": 310,
-              "y": 130
-            },
-            "target": {
-              "x": 420,
-              "y": 130
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -797,7 +752,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Alternative C",
+              "name": "",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -810,7 +765,7 @@
             },
             "id": "2b666285-69d3-48ad-a885-a72e7d14581d",
             "labels": [
-              "Alternative C"
+              ""
             ],
             "source": {
               "cell": "717227de-620b-43a6-b417-ebdccd27aa9b"
@@ -820,12 +775,20 @@
             },
             "vertices": [
               {
-                "x": 1080,
-                "y": 590
+                "x": 720,
+                "y": 390
               },
               {
-                "x": 1110,
-                "y": 690
+                "x": 680,
+                "y": 360
+              },
+              {
+                "x": 660,
+                "y": 340
+              },
+              {
+                "x": 600,
+                "y": 290
               }
             ]
           },
@@ -872,12 +835,12 @@
             },
             "vertices": [
               {
-                "x": 260,
-                "y": 620
+                "x": 510,
+                "y": 110
               },
               {
-                "x": 200,
-                "y": 290
+                "x": 510,
+                "y": 80
               }
             ]
           },
@@ -1022,9 +985,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "12fc39ca-1751-4705-8ed2-4cbeeeebbc9d",
+            "labels": [
+              "Login"
+            ],
+            "source": {
+              "x": 250,
+              "y": 50
+            },
+            "target": {
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 20
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 442,
-              "y": 75
+              "x": 412.5,
+              "y": -65
             },
             "size": {
               "width": 130,
@@ -1057,8 +1069,8 @@
           },
           {
             "position": {
-              "x": 634,
-              "y": 75
+              "x": 690,
+              "y": -70
             },
             "size": {
               "width": 130,
@@ -1091,8 +1103,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": -190
+              "x": 600,
+              "y": -250
             },
             "size": {
               "width": 120,
@@ -1381,16 +1393,16 @@
           },
           {
             "position": {
-              "x": 1090,
-              "y": 900
+              "x": 490,
+              "y": 130
             },
             "size": {
-              "width": 110,
-              "height": 90
+              "width": 140,
+              "height": 110
             },
             "attrs": {
               "text": {
-                "text": "Other Mobile\nPhone OTT\nService"
+                "text": "Allsecure Mobile\nPhone OTT\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -1404,7 +1416,7 @@
             "id": "73435ffb-997b-4db0-b67d-2558d7f54f76",
             "data": {
               "type": "tm.Process",
-              "name": "Other Mobile\nPhone OTT\nService",
+              "name": "Allsecure Mobile\nPhone OTT\nService",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1439,8 +1451,8 @@
           },
           {
             "position": {
-              "x": 543,
-              "y": 125
+              "x": 542.5,
+              "y": -5
             },
             "size": {
               "width": 112.5,
