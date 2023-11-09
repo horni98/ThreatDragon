@@ -225,46 +225,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "49151771-9d50-4f37-afbc-7450f8c065e5",
-            "source": {
-              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
-            },
-            "target": {
-              "x": 472,
-              "y": -25
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Login",
               "description": "",
               "outOfScope": false,
@@ -1470,6 +1430,30 @@
             "data": {
               "type": "tm.Text",
               "name": "Telefonanbieter",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 543,
+              "y": 125
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Erwarteter OTT"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "bc2ff926-2da0-4b6e-b416-7ae14833d67f",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Text",
+              "name": "Erwarteter OTT",
               "hasOpenThreats": false
             }
           }
