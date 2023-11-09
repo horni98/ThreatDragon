@@ -1483,8 +1483,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1499,8 +1499,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "dcc2b0ef-fe14-47ed-b40a-32aaef1aa66c",
+                  "title": "DoS angriff auf Auth ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1861,11 +1875,24 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer kennt Verschlüsselung und kann Daten ändern und wieder verschlüsseln\nAngriffsvektor: Fehlende/ Schlechte Verschlüsselung\nAttack Pattern ID: 97 Cryptanalysis\nGegenmaßnahme: This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features. \n",
+                  "description": "Angreifer kennt Verschlüsselung und kann Daten ändern und wieder verschlüsseln\nAngriffsvektor: Fehlende/ Schlechte Verschlüsselung/ Kompromittierung von Anwendungen\nAttack Pattern ID: 97 Cryptanalysis\nGegenmaßnahme: This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features. \n",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "dd565924-860a-404f-a01c-6c3c24b920f8",
+                  "title": "Stehlen vermeindlich verschlüsselter Daten",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Angreifer kennt Verschlüsselung und kann Daten ändern und wieder verschlüsseln\nAngriffsvektor: Fehlende/ Schlechte Verschlüsselung/ Kompromittierung von Anwendungen\nAttack Pattern ID: 97 Cryptanalysis\nGegenmaßnahme: This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features. \n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
                   "score": ""
                 }
               ]
@@ -1985,6 +2012,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 8
   }
 }
