@@ -669,6 +669,54 @@
             ]
           },
           {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "a42aadc7-36c7-4df8-8bdb-6ba1382c3fb9",
+            "source": {
+              "x": 1670,
+              "y": -120
+            },
+            "target": {
+              "x": 1668,
+              "y": -120
+            },
+            "vertices": [
+              {
+                "x": 1630,
+                "y": 310
+              },
+              {
+                "x": 1240,
+                "y": 310
+              },
+              {
+                "x": 1090,
+                "y": -40
+              },
+              {
+                "x": 1440,
+                "y": -260
+              }
+            ]
+          },
+          {
             "position": {
               "x": 422,
               "y": 75
@@ -886,7 +934,7 @@
           },
           {
             "position": {
-              "x": 1358,
+              "x": 1448,
               "y": 75
             },
             "size": {
@@ -920,8 +968,8 @@
           },
           {
             "position": {
-              "x": 1315,
-              "y": -130
+              "x": 1400,
+              "y": -160
             },
             "size": {
               "width": 120,
