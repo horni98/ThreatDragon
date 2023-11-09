@@ -1507,7 +1507,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\n",
+                  "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\nAngriffsvektor: Browserbasierte Angriffe\nCAPEC: 469 HTTP DoS\nGegenmaßnahme: Filter Network Traffic  M1037 \n\n",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
