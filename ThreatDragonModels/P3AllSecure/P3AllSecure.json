@@ -1120,54 +1120,6 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "44456c18-015c-43ce-9309-9d94ae826632",
-            "labels": [
-              "Überwacht"
-            ],
-            "source": {
-              "cell": "73435ffb-997b-4db0-b67d-2558d7f54f76"
-            },
-            "target": {
-              "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
-            },
-            "vertices": [
-              {
-                "x": 370,
-                "y": 80
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Überwacht",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
             "id": "5bb199a4-30cb-4b45-b48f-44fef5205041",
             "labels": [
               "Überwacht"
@@ -1422,6 +1374,54 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Überwacht",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "44456c18-015c-43ce-9309-9d94ae826632",
+            "labels": [
+              "Überwacht"
+            ],
+            "source": {
+              "cell": "73435ffb-997b-4db0-b67d-2558d7f54f76"
+            },
+            "target": {
+              "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 80
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": -65
@@ -1459,8 +1459,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Angriffsverktor: Kontoübernahme\nAngreifer bekommt Handy eines Nutzers und kann so an den OTT kommen\nAttack Pattern ID: 507\nTaktik: Privileged Account Management M1026; User Account Management  M1018 ",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Angriffsverktor: Kontoübernahme\nAngreifer bekommt Handy eines Nutzers und kann so an den OTT kommen\nAttack Pattern ID: 507\n",
+                  "mitigation": "Taktik: Privileged Account Management M1026; User Account Management  M1018 ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -1769,8 +1769,8 @@
                 "text": "Allsecure Mobile\nPhone OTT\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1785,8 +1785,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "20f38038-c72f-4ea2-ac53-d610d0dfb365",
+                  "title": "Verschlüsselung ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Angreifer verschlüsselt OTTs \t\t\nCAPEC-39: Manipulating Opaque Client-based Data Tokens",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1912,11 +1926,13 @@
                 "text": "Report-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1934,8 +1950,22 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "aff4e01c-2a51-45b0-ae51-cfc6034471ca",
+                  "title": "Verschlüsseln der Reports",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Angreifer Verschlüsselt Report Database \n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 0,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1986,8 +2016,8 @@
                 "text": "SIEM"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2002,8 +2032,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "2ca36d0a-cc0e-4a8f-915c-ca4ebd479ef1",
+                  "title": "Zugriff auf SIEM Systeme",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Angreifer schafft Zugriff auf SIEM Systeme und kann Daten auslesen",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -2012,6 +2056,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 24
   }
 }
