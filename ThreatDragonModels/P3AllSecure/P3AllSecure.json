@@ -1169,6 +1169,9 @@
               "threats": []
             },
             "id": "44456c18-015c-43ce-9309-9d94ae826632",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "73435ffb-997b-4db0-b67d-2558d7f54f76"
             },
@@ -1180,9 +1183,6 @@
                 "x": 370,
                 "y": 80
               }
-            ],
-            "labels": [
-              "Überwacht"
             ]
           },
           {
@@ -1217,6 +1217,9 @@
               "threats": []
             },
             "id": "5bb199a4-30cb-4b45-b48f-44fef5205041",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
             },
@@ -1228,9 +1231,6 @@
                 "x": 640,
                 "y": -150
               }
-            ],
-            "labels": [
-              "Überwacht"
             ]
           },
           {
@@ -1265,6 +1265,9 @@
               "threats": []
             },
             "id": "717d4bfa-af98-4efb-817c-84be69294675",
+            "labels": [
+              "wöchentlicher Report"
+            ],
             "source": {
               "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
             },
@@ -1276,9 +1279,6 @@
                 "x": 96,
                 "y": -220
               }
-            ],
-            "labels": [
-              "wöchentlicher Report"
             ]
           },
           {
@@ -1313,20 +1313,108 @@
               "threats": []
             },
             "id": "842ebb0e-9408-4f50-9f2c-232ee8c69cf8",
+            "labels": [
+              "wöchentlicher Report verschlüsselt"
+            ],
             "source": {
               "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
             },
             "target": {
-              "cell": "495861a7-c88c-47ed-bc87-39a8a3f659a7"
+              "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
             },
             "vertices": [
               {
-                "x": 230,
-                "y": -630
+                "x": 160,
+                "y": -250
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email mit verschlüsseltem Report",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "688ad43c-4eed-49c0-99bd-b1985f4bd9a6",
+            "source": {
+              "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
+            },
+            "target": {
+              "cell": "495861a7-c88c-47ed-bc87-39a8a3f659a7"
+            },
             "labels": [
-              "wöchentlicher Report verschlüsselt"
+              "Email mit verschlüsseltem Report"
+            ],
+            "vertices": [
+              {
+                "x": 380,
+                "y": -470
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "639f683c-f06d-40c1-b174-9169a53af9be",
+            "source": {
+              "x": 359,
+              "y": -715
+            },
+            "target": {
+              "x": 840,
+              "y": -770
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": -580
+              },
+              {
+                "x": 660,
+                "y": -580
+              }
             ]
           },
           {
@@ -1343,8 +1431,8 @@
                 "text": "Login System-\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1359,8 +1447,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "718713f6-78d8-44a1-8199-3bc6be6b52b0",
+                  "title": "Geklautes Handy",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Angriffsverktor: Kontoübernahme\nAngreifer bekommt Handy eines Nutzers und kann so an den OTT kommen\nAttack Pattern ID: 507\nTaktik: Privileged Account Management M1026; User Account Management  M1018 ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1849,6 +1951,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
