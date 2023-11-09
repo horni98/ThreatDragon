@@ -1234,6 +1234,102 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "wöchentlicher Report",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "717d4bfa-af98-4efb-817c-84be69294675",
+            "source": {
+              "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
+            },
+            "target": {
+              "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
+            },
+            "vertices": [
+              {
+                "x": 96,
+                "y": -220
+              }
+            ],
+            "labels": [
+              "wöchentlicher Report"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "wöchentlicher Report verschlüsselt",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "842ebb0e-9408-4f50-9f2c-232ee8c69cf8",
+            "source": {
+              "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
+            },
+            "target": {
+              "cell": "495861a7-c88c-47ed-bc87-39a8a3f659a7"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": -630
+              }
+            ],
+            "labels": [
+              "wöchentlicher Report verschlüsselt"
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": -65
