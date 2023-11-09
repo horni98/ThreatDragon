@@ -752,9 +752,59 @@
               "cell": "7810ed78-14f0-4565-a88f-de1409ff4ed8"
             },
             "target": {
-              "x": 1270,
-              "y": 670
-            }
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 620
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a807a001-249d-44be-aa22-6f5403f40cda",
+            "source": {
+              "cell": "73435ffb-997b-4db0-b67d-2558d7f54f76"
+            },
+            "target": {
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 620
+              }
+            ]
           },
           {
             "position": {
