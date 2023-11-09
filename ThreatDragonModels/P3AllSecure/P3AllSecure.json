@@ -557,54 +557,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Log(Login,OTT,Phone Number)",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
-            "labels": [
-              "Log(Login,OTT,Phone Number)"
-            ],
-            "source": {
-              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
-            },
-            "target": {
-              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
-            },
-            "vertices": [
-              {
-                "x": 871.5,
-                "y": -250
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Speichern",
               "description": "",
               "outOfScope": false,
@@ -1418,6 +1370,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log(Login,OTT,Phone Number)",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
+            "labels": [
+              "Log(Login,OTT,Phone Number)"
+            ],
+            "source": {
+              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
+            },
+            "target": {
+              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
+            },
+            "vertices": [
+              {
+                "x": 871.5,
+                "y": -250
+              },
+              {
+                "x": 850,
+                "y": -280
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": -65
@@ -1513,11 +1517,13 @@
                 "text": "Log-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1535,8 +1541,22 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "46c41e19-b8cf-450c-a543-9b0ce7a99e84",
+                  "title": "Logs Löschen",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Angreifer kann Logs löschen um keinen Fußabdruck zu hinterlassen\nAngriffsvektor: Insider-Bedrohungen\nAttack Pattern: 81Web Server Logs Tampering\nGegenmaßnahme: User Account Management Configure default account policy to enable logging. Manage policies to ensure only necessary users have permissions to make changes to logging policies.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1965,6 +1985,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 5
   }
 }
