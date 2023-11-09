@@ -1,0 +1,27 @@
+{
+  "version": "2.0.7",
+  "summary": {
+    "title": "P3AllSecure",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 2,
+        "title": "AllSecureLogIn",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.0.7",
+        "cells": [],
+        "description": "https://bedrohungsdrache-team20.devsecops.fh-aachen.de"
+      }
+    ],
+    "diagramTop": 3,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
