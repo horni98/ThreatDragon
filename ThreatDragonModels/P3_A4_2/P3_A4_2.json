@@ -16,7 +16,8 @@
         "placeholder": "New generic diagram description",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.0.7",
-        "cells": [{
+        "cells": [
+          {
             "position": {
               "x": 130,
               "y": 15
