@@ -762,46 +762,6 @@
             ]
           },
           {
-            "shape": "trust-broundary-curve",
-            "attrs": {
-              "line": {
-                "targetMarker": "",
-                "strokeDasharray": "7 5",
-                "sourceMarker": ""
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "639f683c-f06d-40c1-b174-9169a53af9be",
-            "source": {
-              "x": 359,
-              "y": -715
-            },
-            "target": {
-              "x": 840,
-              "y": -770
-            },
-            "vertices": [
-              {
-                "x": 550,
-                "y": -580
-              },
-              {
-                "x": 660,
-                "y": -580
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1206,73 +1166,6 @@
             }
           },
           {
-            "shape": "trust-broundary-curve",
-            "attrs": {
-              "line": {
-                "targetMarker": "",
-                "strokeDasharray": "7 5",
-                "sourceMarker": ""
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "7d55de64-7c14-4940-a182-3f8f1dc73751",
-            "labels": [
-              ""
-            ],
-            "source": {
-              "x": 220,
-              "y": -80
-            },
-            "target": {
-              "x": 220,
-              "y": -80
-            },
-            "vertices": [
-              {
-                "x": 460,
-                "y": 250
-              },
-              {
-                "x": 820,
-                "y": 180
-              },
-              {
-                "x": 970,
-                "y": -60
-              },
-              {
-                "x": 1120,
-                "y": -200
-              },
-              {
-                "x": 1020,
-                "y": -400
-              },
-              {
-                "x": 750,
-                "y": -450
-              },
-              {
-                "x": 220,
-                "y": -550
-              },
-              {
-                "x": -80,
-                "y": -280
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1412,6 +1305,73 @@
             ],
             "labels": [
               "Private Key"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "7d55de64-7c14-4940-a182-3f8f1dc73751",
+            "labels": [
+              ""
+            ],
+            "source": {
+              "x": 90,
+              "y": -60
+            },
+            "target": {
+              "x": 90,
+              "y": -60
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 250
+              },
+              {
+                "x": 820,
+                "y": 180
+              },
+              {
+                "x": 970,
+                "y": -60
+              },
+              {
+                "x": 1120,
+                "y": -200
+              },
+              {
+                "x": 1010,
+                "y": -490
+              },
+              {
+                "x": 780,
+                "y": -670
+              },
+              {
+                "x": 400,
+                "y": -640
+              },
+              {
+                "x": 90,
+                "y": -300
+              }
             ]
           },
           {
@@ -1582,8 +1542,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Angreifer kann Logs löschen um keinen Fußabdruck zu hinterlassen\nAngriffsvektor: Insider-Bedrohungen\nAttack Pattern: 81Web Server Logs Tampering\nGegenmaßnahme: User Account Management Configure default account policy to enable logging. Manage policies to ensure only necessary users have permissions to make changes to logging policies.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "CAPEC-268: Audit Log Manipulation\n\nAngreifer kann Logs löschen um keinen Fußabdruck zu hinterlassen\nAngriffsvektor: Insider-Bedrohungen\nAttack Pattern: 81 Web Server Logs Tampering\nGegenmaßnahme: User Account Management Configure default account policy to enable logging. Manage policies to ensure only necessary users have permissions to make changes to logging policies.",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -2014,8 +1974,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
