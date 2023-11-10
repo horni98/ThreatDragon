@@ -1542,12 +1542,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "CAPEC-268: Audit Log Manipulation\n\nAngreifer kann Logs löschen um keinen Fußabdruck zu hinterlassen\nAngriffsvektor: Insider-Bedrohungen\nAttack Pattern: 81 Web Server Logs Tampering\nGegenmaßnahme: User Account Management Configure default account policy to enable logging. Manage policies to ensure only necessary users have permissions to make changes to logging policies.",
-                  "mitigation": "",
+                  "description": "CAPEC-268: Audit Log Manipulation\nTA0005\nAngreifer kann Logs löschen um keinen Fußabdruck zu hinterlassen\nAngriffsvektor: Insider-Bedrohungen\nAttack Pattern: 81 Web Server Logs Tampering\nGegenmaßnahme: User Account Management Configure default account policy to enable logging. Manage policies to ensure only necessary users have permissions to make changes to logging policies.\n\nD: 8\nR: 7\nE: 5\nA: 2\nD: 7\n",
+                  "mitigation": "Dateien können nur mit Admin rechten gelöscht werden\nM1022 Restrict File and Directory Permissions\nD3-LFP\nV4.2.1 ASVS\nD: 8 > 6\nR: 7 > 5\nE: 5 > 2\nA: 2  > 2\nD: 7 > 7\nDREAD: 4.4",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
-                  "score": ""
+                  "score": "5.8"
                 },
                 {
                   "id": "56e868b9-20a7-4b35-a04d-90eef0160f89",
