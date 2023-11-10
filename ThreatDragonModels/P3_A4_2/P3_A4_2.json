@@ -1351,69 +1351,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "581e698d-a323-47a6-a4e2-edd6c1302704",
-                  "title": "DoS AngrIFF auf System",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Der Angreifer erstellt eine hohe Last an Anfragen für die Login-Seite. Diese ist der Last nicht gewachsen und das System bricht zusammen. Hierbei kann der Angreifer ein Botnetz verwenden um die Anfragen auf den Server verteilt zu erstellen\n\nCAPEC: HTTP DoS: 469\nMITRE: T1498 \n\nDamage: 9 -> hoch\nReproducibility: 7 tendentiell hoch\nExploitability: 7 tendentiell hoch\nAffected User: 8 hoch\nDiscoverability: 4 relativ mittel\nDread Wert -> 7",
-                  "mitigation": "M1037\nFilter Network Traffic\n-> Legitimer Traffic muss von böswilligem Getrennt werden, hierzu kann der ISP zu rate gezogen werden, Ports geschlossen werden oder IP Adressen blockiert werden.\n\nDies würd die Exploitability was reduzieren, den rest nicht schwer:\n Exp: 5\nDread: 6,8",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 30,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "7a466873-2777-477b-bbea-551550ef9ac7",
-            "labels": [
-              "Login"
-            ],
-            "source": {
-              "cell": "a1daa758-ab95-4595-905e-00967a950f83"
-            },
-            "target": {
-              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 1
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Auth Challenge",
               "description": "",
               "outOfScope": false,
@@ -1453,6 +1390,69 @@
               {
                 "x": 610,
                 "y": -30
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "581e698d-a323-47a6-a4e2-edd6c1302704",
+                  "title": "DoS AngrIFF auf System",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Der Angreifer erstellt eine hohe Last an Anfragen für die Login-Seite. Diese ist der Last nicht gewachsen und das System bricht zusammen. Hierbei kann der Angreifer ein Botnetz verwenden um die Anfragen auf den Server verteilt zu erstellen\n\nCAPEC: HTTP DoS: 469\nMITRE: T1498 \n\nDamage: 9 -> hoch\nReproducibility: 7 tendentiell hoch\nExploitability: 7 tendentiell hoch\nAffected User: 8 hoch\nDiscoverability: 4 relativ mittel\nDread Wert -> 7",
+                  "mitigation": "Filter Network Traffic  M1037 \nUse network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.\nKurze Beschreibung und wie hilft gegen Bedrohung?\nMaximale Anfragen pro Zeit festlegen und danach Anfragen von IP blockieren (für bestimmten Zeitraum)\nID nach Defense mitre: D3-ITF\nAnforderung ASVS: V11.1 Sicherheit der fachlichen Funktionen\n\nRisikoreduktion:\nDamage: 5 - > 3 \nRepro: 9 - > 6\nExploi: 6 - > 4\nAffec: 10 - > 7\nDisco.: 5 - > 3\nDREAD : 4.6\n\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "7a466873-2777-477b-bbea-551550ef9ac7",
+            "labels": [
+              "Login"
+            ],
+            "source": {
+              "cell": "a1daa758-ab95-4595-905e-00967a950f83"
+            },
+            "target": {
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 1
               }
             ]
           },
@@ -1556,7 +1556,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\nAngriffsvektor: Browserbasierte Angriffe\nCAPEC ID: 469 HTTP DoS\nMITRE: Filter Network Traffic  M1037 \nDamage: 5\nRepro: 9\nExploi: 6\nAffec: 10\nDisco: 5\n",
-                  "mitigation": "Filter Network Traffic  M1037 \nUse network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.\nKurze Beschreibung und wie hilft gegen Bedrohung?\nMaximale Anfragen pro Zeit festlegen und danach Anfragen von IP blockieren (für bestimmten Zeitraum)\nID nach Defense mitre: D3-ITF\nAnforderung ASVS: V11.1 Sicherheit der fachlichen Funktionen\n\nRisikoreduktion:\nDamage: 5 - > 3 \nRepro: 9 - > 6\nExploi: 6 - > 4\nAffec: 10 - > 7\nDisco.: 5 - > 3\nDREAD : 4.6",
+                  "mitigation": "Filter Network Traffic  M1037 \nUse network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.\nKurze Beschreibung und wie hilft gegen Bedrohung?\nMaximale Anfragen pro Zeit festlegen und danach Anfragen von IP blockieren (für bestimmten Zeitraum)\nID nach Defense mitre: D3-ITF\nAnforderung ASVS: V11.1 Sicherheit der fachlichen Funktionen\n\nRisikoreduktion:\nDamage: 5 - > 3 \nRepro: 9 - > 6\nExploi: 6 - > 4\nAffec: 10 - > 7\nDisco.: 5 - > 3\nDREAD : 4.6\n\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
