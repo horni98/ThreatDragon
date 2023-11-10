@@ -1175,6 +1175,10 @@
             },
             "vertices": [
               {
+                "x": 320,
+                "y": -330
+              },
+              {
                 "x": 420,
                 "y": -310
               }
@@ -1634,7 +1638,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Falls ein Angreifer im System ist, kann er die Daten der Datenbank offenlegen, da diese nicht verschlüsselt ist\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Falls ein Angreifer im System ist, kann er die Daten des Backups offenlegen, da dieses nicht verschlüsselt ist. Da Tokens für ein Jahr gelten können Tokens der letzten 365 Tage vom Angreifer genutzt werden\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 28,
@@ -1859,12 +1863,12 @@
               "threats": [
                 {
                   "id": "20f38038-c72f-4ea2-ac53-d610d0dfb365",
-                  "title": "Verschlüsselung ",
+                  "title": "Unverschlüsseltes Backup von OTTs",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Angreifer verschlüsselt OTTs \t\t\nCAPEC-39: Manipulating Opaque Client-based Data Tokens\n\n\nD: 7 R: 6 E: 5 A: 9 D: 4",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "type": "Information disclosure",
+                  "description": "Falls ein Angreifer im System ist, kann er die Daten des Backups offenlegen, da dieses nicht verschlüsselt ist. Da Tokens für ein Jahr gelten können Tokens der letzten 365 Tage vom Angreifer genutzt werden\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
+                  "mitigation": "Kurze Beschreibung und wie hilft gegen Bedrohung?\nFrage stellen, ob BackUps an der Stelle nötig sind. Falls ja, Verschlüsselung verwenden\n\nRisikoreduktion:\nDamage: 8 - > 6 \nRepro: 6 - > 5\nExploi: 6 - > 4\nAffec: 4 - > 4\nDisco.: 7 - > 7\nDREAD : 5.2\n\nID nach Defense mitre: D3-FE\nAnforderung ASVS: V1.8 Architektonische Anforderungen zur Einhaltung des Datenschutzes – 1.8.2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 24,
@@ -2187,6 +2191,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 37
+    "threatTop": 38
   }
 }
