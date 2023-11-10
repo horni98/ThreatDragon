@@ -1351,69 +1351,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Auth Challenge",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "6eba64e4-afc2-4ac6-8343-a75b742e3e94",
-                  "title": "MitM zw. LogIn und 2FA",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Zwischen dem Login-System und dem 2FA Dienst kann sich ein Angreifer zwischenschalten und die Daten abfangen, überwachen und sogar manipulieren. Dies passiert wenn die Daten unverschlüsselt übermittelt werden\n\nCAPEC ID: 94\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\ndread -> 6,6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 26,
-                  "score": "6.6"
-                }
-              ]
-            },
-            "id": "85d62260-98b8-43df-818a-a0ba027cc053",
-            "labels": [
-              "Auth Challenge"
-            ],
-            "source": {
-              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
-            },
-            "target": {
-              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
-            },
-            "vertices": [
-              {
-                "x": 610,
-                "y": -30
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Login",
               "description": "",
               "outOfScope": false,
@@ -1453,6 +1390,69 @@
               {
                 "x": 320,
                 "y": 1
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Auth Challenge",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "6eba64e4-afc2-4ac6-8343-a75b742e3e94",
+                  "title": "MitM zw. LogIn und 2FA",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Zwischen dem Login-System und dem 2FA Dienst kann sich ein Angreifer zwischenschalten und die Daten abfangen, überwachen und sogar manipulieren. Dies passiert wenn die Daten unverschlüsselt übermittelt werden\n\nCAPEC ID: 94\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\ndread -> 6,6",
+                  "mitigation": "Kurze Beschreibung und wie hilft gegen Bedrohung?\nÜberwachung von Geografischen Pattern zur Analyse ob die Person die richtige ist. Falls also eine Person sich zwischenschaltet kann anhand der Lokalen Position erkannt werden, dass diese ein Angreifer ist.\n\nRisikoreduktion\nDamage: 7 hoch\nReproducibility: 6 mittel\nExploitability: 6 tendiert hoch\nAffected Users: 6 hoch\nDiscoverability:3 niedrig\nDread -> 5,6\n\nID nach Defense mitre -> D3-UGLPA\n\nAnforderung ASVS – V1.9 Architektur der Kommunikationsverbindungen -> 1.9.2",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "6.6"
+                }
+              ]
+            },
+            "id": "85d62260-98b8-43df-818a-a0ba027cc053",
+            "labels": [
+              "Auth Challenge"
+            ],
+            "source": {
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "target": {
+              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": -30
               }
             ]
           },
@@ -2080,8 +2080,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Manager lässt Reports ausgedruckt auf Tisch liegen, Angreifer bekommt Zutritt zu Büro (Reinigungskraft o.ä.) und kann Reports lesen\nCAPEC-122: Privilege Abuse\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Manager lässt Reports ausgedruckt auf Tisch liegen, Angreifer bekommt Zutritt zu Büro (Reinigungskraft o.ä.) und kann Reports lesen\nCAPEC-122: Privilege Abuse\nTaktik: Privilege Escalation TA0029\nM1013 Application Developer Guidance \n\n\n",
+                  "mitigation": "Kurze Beschreibung und wie hilft gegen Bedrohung?\nMitarbeiter Security Training\n\nRisikoreduktion\nDamage: 7 hoch\nReproducibility: 6 mittel\nExploitability: 6 tendiert hoch\nAffected Users: 6 hoch\nDiscoverability:3 niedrig\nDread -> 5,6\n\nID nach Defense mitre -> D3-DP\n\nAnforderung ASVS – V4.3 Weitere Maßnahmen zur Zugriffssteuerung -> 4.3.2",
                   "modelType": "Generic",
                   "new": false,
                   "number": 39,
@@ -2192,6 +2192,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 39
+    "threatTop": 42
   }
 }
