@@ -2124,7 +2124,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Wenn die Daten im Siem nicht verschlüsselt sind, und ein Angreifer auf dieses Zugriff erhalten könnte, so könnten die Daten offengelegt werde. Hier könnten Sicherheitsrelevante Informationen oder Protokolldaten betroffen sein\n\n\nCAPEC ID: 165\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 4\nDisco.: 7\n\nDread -> 6,2",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Kurze Beschreibung und wie hilft gegen Bedrohung?\nKryptografisch wird die Datei verschlüsselt. Das kann mit einem oder 2 Keys geschehen und kann symmtrisch oder asymetrisch vollzogen werden.\n\nRisikoreduktion:\nDamage: 8 - > 6 \nRepro: 6 - > 5\nExploi: 6 - > 4\nAffec: 4 - > 4\nDisco.: 7 - > 7\nDREAD : 5.2\n\nID nach Defense mitre: D3-FE\nAnforderung ASVS: V1.8 Architektonische Anforderungen zur Einhaltung des Datenschutzes – 1.8.2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 29,
