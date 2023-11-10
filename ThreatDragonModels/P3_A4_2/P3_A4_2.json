@@ -2172,7 +2172,7 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Export Tool hat Cache mit unverschlüsselten Daten\nCAPEC-204: Lifting Sensitive Data Embedded in Cache\nMonitor for unexpected/abnormal access to files that may be malicious collection of local data, such as user files (pdf, .docx, .jpg, etc.) or local databases.\nD 6\nR  9\nE 7\nA 4\nD 9",
-                  "mitigation": "Data Loss Prevention Data loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted M1057 ",
+                  "mitigation": "M1057 Data Loss Prevention \nData loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted \nSystem nach unverschlüssleten Daten Scannen und diese Verschlüsseln\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 37,
