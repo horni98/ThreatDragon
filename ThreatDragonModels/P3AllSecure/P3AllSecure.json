@@ -1602,6 +1602,19 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "56e868b9-20a7-4b35-a04d-90eef0160f89",
+                  "title": "Unverschlüsselte Datenbank",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Falls ein Angreifer im System ist, kann er die Daten der Datenbank offenlegen, da diese nicht verschlüsselt ist\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "7.2"
                 }
               ]
             }
@@ -2123,6 +2136,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 28
   }
 }
