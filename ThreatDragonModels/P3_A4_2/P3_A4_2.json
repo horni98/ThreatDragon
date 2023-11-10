@@ -1504,7 +1504,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Der Benutzer versucht sich auf einer Visuell ähnlich/gleichen Plattform anzumelden, ohne zu merken dass im Hintergrund seine Login-Credentials mitgeschnitten werden\n\nCAPEC: Fake source of Data: ID194 \nMIRTE: T1567 -> Restrict Web Based Content \n\nDamage: 8 hoch\nReproducibility: 7 ziemlich hoch\nExploitability: 7 ziemlich hoch\nAffected Users: 6 mittel\nDiscoverability: 8 hoch\nDread -> 7,2",
-                  "mitigation": "M1021 Restrict Web Based Content:\nConsider blocking download/transfer and execution of potentially uncommon file types known to be used in adversary campaigns.\nTechnische Umsetzung: Whitelist/ blacklist von donwloadable formats\n\nDamage: 5\nReproducibility: 4\nExploitability: 5\nAffected Users: 2\nDiscoverability: 3\nDread -> 3,8\n\nD3-FIM\n\nOWASP: V2.1 Passwortsicherheit\n",
+                  "mitigation": "M1021 Restrict Web Based Content:\nConsider blocking download/transfer and execution of potentially uncommon file types known to be used in adversary campaigns.\nTechnische Umsetzung: Whitelist/ blacklist von donwloadable formats\n\nDamage: 8 > 5\nReproducibility: 7 > 4\nExploitability: 7 > 5\nAffected Users: 6 > 2\nDiscoverability :8 > 3\nDread -> 3,8\n\nD3-FIM\n\nOWASP: V2.1 Passwortsicherheit\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 25,
