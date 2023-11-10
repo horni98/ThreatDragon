@@ -2092,6 +2092,19 @@
                   "new": false,
                   "number": 17,
                   "score": ""
+                },
+                {
+                  "id": "5a27afa9-dfe3-4699-afed-bd85c659396c",
+                  "title": "Unverschlüsselte Daten in SIEM",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Wenn die Daten im Siem nicht verschlüsselt sind, und ein Angreifer auf dieses Zugriff erhalten könnte, so könnten die Daten offengelegt werde. Hier könnten Sicherheitsrelevante Informationen oder Protokolldaten betroffen sein\n\n\nCAPEC ID: 165\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 4\nDisco.: 7\n\nDread -> 6,2",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
                 }
               ]
             }
@@ -2136,6 +2149,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 28
+    "threatTop": 29
   }
 }
