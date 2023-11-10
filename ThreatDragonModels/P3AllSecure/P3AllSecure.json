@@ -975,58 +975,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Log(Login,OTT,Phone Number)",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
-            "labels": [
-              "Log(Login,OTT,Phone Number)"
-            ],
-            "source": {
-              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
-            },
-            "target": {
-              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
-            },
-            "vertices": [
-              {
-                "x": 970,
-                "y": -240
-              },
-              {
-                "x": 970,
-                "y": -280
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Überwacht",
               "description": "",
               "outOfScope": false,
@@ -1410,7 +1358,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Login",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1441,7 +1389,77 @@
             },
             "target": {
               "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
-            }
+            },
+            "labels": [
+              "Login"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log(Login,OTT,Phone Number)",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "40f58dd9-cad7-4900-a776-083fc76ec12e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 0,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
+            "labels": [
+              "Log(Login,OTT,Phone Number)"
+            ],
+            "source": {
+              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
+            },
+            "target": {
+              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
+            },
+            "vertices": [
+              {
+                "x": 970,
+                "y": -240
+              },
+              {
+                "x": 970,
+                "y": -280
+              }
+            ]
           },
           {
             "position": {
@@ -2164,6 +2182,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 30
+    "threatTop": 32
   }
 }
