@@ -1375,6 +1375,42 @@
             ]
           },
           {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "strokeDasharray": "7 5",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "9bfc616c-6d9b-4889-be15-fde20ce90b43",
+            "source": {
+              "x": -170,
+              "y": -569
+            },
+            "target": {
+              "x": 190,
+              "y": -670
+            },
+            "vertices": [
+              {
+                "x": 40,
+                "y": -500
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": -65
@@ -1555,8 +1591,8 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Falls ein Angreifer im System ist, kann er die Daten der Datenbank offenlegen, da diese nicht verschlüsselt ist\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
-                  "mitigation": "Falls ein Angreifer im System ist, kann er die Daten des Backups offenlegen, da dieses nicht verschlüsselt ist. Da Tokens für ein Jahr gelten können Tokens der letzten 365 Tage vom Angreifer genutzt werden\n\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
+                  "description": "Falls ein Angreifer im System ist, kann er die Daten der Datenbank offenlegen, da diese nicht verschlüsselt ist\nFalls ein Angreifer im System ist, kann er die Daten des Backups offenlegen, da dieses nicht verschlüsselt ist. Da Tokens für ein Jahr gelten können Tokens der letzten 365 Tage vom Angreifer genutzt werden\nCAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
+                  "mitigation": "CAPAC ID37\nMITRE: ID: M1041 Encrypt Sensitive Data\n\nDamage: 8\nRepro: 6\nExploi: 6\nAffec: 8\nDisco.: 8\n\nDread -> 7.2",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 28,
@@ -1950,7 +1986,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Capec id: 549 -> Local exe of codeloca\nMitre: TA0002 Execution Damage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\nDamage: 9\nDamage: 8 hoch\nReproducibility: 8\nExploitability: 8\nAffected Users: 9\nDiscoverability: 10\n8,6",
+                  "description": "Capec id: 549 -> Local exe of codeloca\nMitre: TA0002 Execution \nDamage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\nDamage: 9\nDamage: 8 hoch\nReproducibility: 8\nExploitability: 8\nAffected Users: 9\nDiscoverability: 10\n8,6",
                   "mitigation": "Local File Permission\nDas OS muss so Konfiguriert werden dass locale Dateien nicht für jeden einsehbar sind oder nicht von jedem ausgeführt werden dürfen. Somit können unbekannte locale dateien nicht gestartet werden oder schon bekannte lokalen dateien nicht geändert werden.\nRisikoreduktion\nDamage: 7 hoch\nReproducibility: 6 mittel\nExploitability: 6 tendiert hoch\nAffected Users: 6 hoch\nDiscoverability: 8 niedrig\nDread -> 5,6\n\nD3-LFP\nIntegrität der Anwendung: 10.3.2",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2011,7 +2047,7 @@
           {
             "position": {
               "x": 260,
-              "y": -175
+              "y": -185
             },
             "size": {
               "width": 130,
