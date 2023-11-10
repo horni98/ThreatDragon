@@ -1551,7 +1551,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\nAngriffsvektor: Browserbasierte Angriffe\nCAPEC: 469 HTTP DoS\nGegenmaßnahme: Filter Network Traffic  M1037 \nD 5\nR 9\nE 6\nA 10\nD 5\n",
+                  "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\nAngriffsvektor: Browserbasierte Angriffe\nCAPEC ID: 469 HTTP DoS\nMITRE: Filter Network Traffic  M1037 \nDamage: 5\nRepro: 9\nExploi: 6\nAffec: 10\nDisco: 5\n",
                   "mitigation": "Filter Network Traffic  M1037 \nUse network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.\nKurze Beschreibung und wie hilft gegen Bedrohung?\nMaximale Anfragen pro Zeit festlegen und danach Anfragen von IP blockieren (für bestimmten Zeitraum)\nID nach Defense mitre: D3-ITF\nAnforderung ASVS: V11.1 Sicherheit der fachlichen Funktionen\n\nRisikoreduktion:\nDamage: 5 - > 3 \nRepro: 9 - > 6\nExploi: 6 - > 4\nAffec: 10 - > 7\nDisco.: 5 - > 3\nDREAD : 4.6",
                   "modelType": "STRIDE",
                   "new": false,
