@@ -1398,8 +1398,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1423,22 +1422,8 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "40f58dd9-cad7-4900-a776-083fc76ec12e",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 0,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
             "labels": [
@@ -2156,8 +2141,8 @@
                 "text": "Export \nProzess"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2172,8 +2157,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "de2cc339-3af2-4f08-899e-691a39f04dfb",
+                  "title": "Schwachstellen in Export-Tools oder -Plattformen",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Export Tool hat Cache mit unverschlüsselten Daten\nCAPEC-204: Lifting Sensitive Data Embedded in Cache\nMonitor for unexpected/abnormal access to files that may be malicious collection of local data, such as user files (pdf, .docx, .jpg, etc.) or local databases.\nD \nR \nE\nA\nD",
+                  "mitigation": "Data Loss Prevention Data loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted M1057 ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -2182,6 +2181,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 32
+    "threatTop": 37
   }
 }
