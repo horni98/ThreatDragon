@@ -1552,7 +1552,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Angreifer schickt sehr viele Auth Challenges auf hintereinander\nAngriffsvektor: Browserbasierte Angriffe\nCAPEC: 469 HTTP DoS\nGegenmaßnahme: Filter Network Traffic  M1037 \n\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Filter Network Traffic  M1037 \nUse network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic.\nTechnische Umsetzung: Maximale Anfragen pro Zeit festlegen und danach Anfragen von IP blockieren\nD3-ITF\nV11.1 Sicherheit der fachlichen Funktionen\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
