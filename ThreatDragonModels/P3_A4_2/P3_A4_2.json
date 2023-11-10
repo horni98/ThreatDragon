@@ -1182,15 +1182,15 @@
               "threats": []
             },
             "id": "84ad3cc7-4d98-461d-a61e-8f04885a14e8",
+            "labels": [
+              "Zertifikat"
+            ],
             "source": {
               "cell": "45c1051f-410e-4c99-aa05-e295418c7859"
             },
             "target": {
               "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
-            },
-            "labels": [
-              "Zertifikat"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1224,6 +1224,9 @@
               "threats": []
             },
             "id": "9d1b4832-c00a-448d-9473-c4b4f098c0bd",
+            "labels": [
+              "Private Key"
+            ],
             "source": {
               "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
             },
@@ -1239,9 +1242,6 @@
                 "x": 570,
                 "y": -420
               }
-            ],
-            "labels": [
-              "Private Key"
             ]
           },
           {
@@ -1462,7 +1462,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Der Benutzer versucht sich auf einer Visuell ähnlich/gleichen Plattform anzumelden, ohne zu merken dass im Hintergrund seine Login-Credentials mitgeschnitten werden\n\nCAPEC: Fake source of Data: ID194 \nMIRTE: T1567 -> Restrict Web Based Content \n\nDamage: 8 hoch\nReproducibility: 7 ziemlich hoch\nExploitability: 7 ziemlich hoch\nAffected Users: 6 mittel\nDiscoverability: 8 hoch\nDread -> 7,2",
-                  "mitigation": "M1021 Restrict Web Based Content:\nConsider blocking download/transfer and execution of potentially uncommon file types known to be used in adversary campaigns.\nTechnische Umsetzung: Whitelist/ blacklist von donwloadable formats\n\nRisikoreduktion:\nDamage: 8 > 5\nReproducibility: 7 > 4\nExploitability: 7 > 5\nAffected Users: 6 > 2\nDiscoverability :8 > 3\nDread -> 3,8\n\nID nach Defense mitre: D3-FIM\n\nAnforderung ASVS: V2.1 Passwortsicherheit\n",
+                  "mitigation": "M1021 Restrict Web Based Content:\nConsider blocking download/transfer and execution of potentially uncommon file types known to be used in adversary campaigns.\nTechnische Umsetzung: Whitelist/ blacklist von donwloadable formats\n\nRisikoreduktion:\nDamage: 8 > 5\nReproducibility: 7 > 4\nExploitability: 7 > 5\nAffected Users: 6 > 2\nDiscoverability :8 > 3\nDread -> 3,8\n\nID nach Defense mitre: D3-FIM\n\nAnforderung ASVS: V2.1 Passwortsicherheit\n\nMASVS - RESILIENCE-1",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 25,
@@ -2161,8 +2161,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "45c1051f-410e-4c99-aa05-e295418c7859",
             "zIndex": 29,
+            "id": "45c1051f-410e-4c99-aa05-e295418c7859",
             "data": {
               "type": "tm.Process",
               "name": "Zertifizierungsstelle",
