@@ -1351,69 +1351,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "581e698d-a323-47a6-a4e2-edd6c1302704",
-                  "title": "DoS AngrIFF auf System",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Der Angreifer erstellt eine hohe Last an Anfragen für die Login-Seite. Diese ist der Last nicht gewachsen und das System bricht zusammen. Hierbei kann der Angreifer ein Botnetz verwenden um die Anfragen auf den Server verteilt zu erstellen\n\nCAPEC: HTTP DoS: 469\nMITRE: T1498 \n\nDamage: 9 -> hoch\nReproducibility: 7 tendentiell hoch\nExploitability: 7 tendentiell hoch\nAffected User: 8 hoch\nDiscoverability: 4 relativ mittel\nDread Wert -> 7",
-                  "mitigation": "M1037\nFilter Network Traffic\n-> Legitimer Traffic muss von böswilligem Getrennt werden, hierzu kann der ISP zu rate gezogen werden, Ports geschlossen werden oder IP Adressen blockiert werden.\n\nDies würd die Exploitability was reduzieren, den rest nicht schwer:\n Exp: 5\nDread: 6,8",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 30,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "7a466873-2777-477b-bbea-551550ef9ac7",
-            "labels": [
-              "Login"
-            ],
-            "source": {
-              "cell": "a1daa758-ab95-4595-905e-00967a950f83"
-            },
-            "target": {
-              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 1
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Auth Challenge",
               "description": "",
               "outOfScope": false,
@@ -1453,6 +1390,69 @@
               {
                 "x": 610,
                 "y": -30
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "581e698d-a323-47a6-a4e2-edd6c1302704",
+                  "title": "DoS AngrIFF auf System",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Der Angreifer erstellt eine hohe Last an Anfragen für die Login-Seite. Diese ist der Last nicht gewachsen und das System bricht zusammen. Hierbei kann der Angreifer ein Botnetz verwenden um die Anfragen auf den Server verteilt zu erstellen\n\nCAPEC: HTTP DoS: 469\nMITRE: T1498 \n\nDamage: 9 -> hoch\nReproducibility: 7 tendentiell hoch\nExploitability: 7 tendentiell hoch\nAffected User: 8 hoch\nDiscoverability: 4 relativ mittel\nDread Wert -> 7",
+                  "mitigation": "M1037\nFilter Network Traffic\n-> Legitimer Traffic muss von böswilligem Getrennt werden, hierzu kann der ISP zu rate gezogen werden, Ports geschlossen werden oder IP Adressen blockiert werden.\n\nDies würd die Exploitability was reduzieren, den rest nicht schwer:\n Exp: 5\nDread: 6,8",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "7a466873-2777-477b-bbea-551550ef9ac7",
+            "labels": [
+              "Login"
+            ],
+            "source": {
+              "cell": "a1daa758-ab95-4595-905e-00967a950f83"
+            },
+            "target": {
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 1
               }
             ]
           },
@@ -2056,8 +2056,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2072,8 +2072,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "d4ae3153-8459-4e93-a784-3d6dd0d1973d",
+                  "title": "Social Engeneering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Manager lässt Reports ausgedruckt auf Tisch liegen, Angreifer bekommt Zutritt zu Büro (Reinigungskraft o.ä.) und kann Reports lesen\nCAPEC-122: Privilege Abuse\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2108,19 +2122,6 @@
               "privilegeLevel": "",
               "hasOpenThreats": true,
               "threats": [
-                {
-                  "id": "2ca36d0a-cc0e-4a8f-915c-ca4ebd479ef1",
-                  "title": "Zugriff auf SIEM Systeme",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Elevation of privilege",
-                  "description": "Angreifer schafft Zugriff auf SIEM Systeme und kann Daten auslesen",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": ""
-                },
                 {
                   "id": "5a27afa9-dfe3-4699-afed-bd85c659396c",
                   "title": "Unverschlüsselte Daten in SIEM",
@@ -2191,6 +2192,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 38
+    "threatTop": 39
   }
 }
