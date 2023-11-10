@@ -2,8 +2,8 @@
   "version": "2.0.7",
   "summary": {
     "title": "P3_A4_2",
-    "owner": "",
-    "description": "",
+    "owner": "Cedric Lux, Felix Horn",
+    "description": "Allsecure 2-FA mit OTT",
     "id": 0
   },
   "detail": {
@@ -2179,7 +2179,7 @@
       }
     ],
     "diagramTop": 3,
-    "reviewer": "",
+    "reviewer": "Cedric Lux, Felix Horn",
     "threatTop": 43
   }
 }
