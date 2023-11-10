@@ -120,6 +120,9 @@
               "hasOpenThreats": false
             },
             "id": "e0c5cd2d-447c-4d25-8e4d-68574feafe53",
+            "labels": [
+              ""
+            ],
             "source": {
               "x": 520,
               "y": 920
@@ -145,9 +148,6 @@
                 "x": 530,
                 "y": 710
               }
-            ],
-            "labels": [
-              ""
             ]
           },
           {
@@ -987,15 +987,15 @@
               "threats": []
             },
             "id": "c0d1e98a-0bc6-4281-a8cd-153a989d752c",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
             },
             "target": {
               "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
             },
-            "labels": [
-              "Überwacht"
-            ],
             "vertices": [
               {
                 "x": 600,
@@ -1035,6 +1035,9 @@
               "threats": []
             },
             "id": "590e59b9-a722-49b5-8f2d-cce66754e4b1",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "55971421-68f8-4755-a3ac-e0df75aeec78"
             },
@@ -1046,9 +1049,6 @@
                 "x": 380,
                 "y": 110
               }
-            ],
-            "labels": [
-              "Überwacht"
             ]
           },
           {
@@ -1083,15 +1083,15 @@
               "threats": []
             },
             "id": "a9224bb6-9c2a-4aa9-b75b-d5b40a320404",
+            "labels": [
+              "Report"
+            ],
             "source": {
               "cell": "72ac07d8-7f5d-4366-bbe6-ef0674b8a8d0"
             },
             "target": {
               "cell": "495861a7-c88c-47ed-bc87-39a8a3f659a7"
-            },
-            "labels": [
-              "Report"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1164,6 +1164,9 @@
               "threats": []
             },
             "id": "0be0d0c6-078a-4e24-b06e-5dc886f6cb8a",
+            "labels": [
+              "Private Key"
+            ],
             "source": {
               "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
             },
@@ -1175,9 +1178,6 @@
                 "x": 420,
                 "y": -310
               }
-            ],
-            "labels": [
-              "Private Key"
             ]
           },
           {
@@ -1212,15 +1212,15 @@
               "threats": []
             },
             "id": "cd93a507-0d68-4506-a9da-3264f4520306",
+            "labels": [
+              "Public Key"
+            ],
             "source": {
               "cell": "31ee7db4-0f3a-46dd-89fd-af91477eb407"
             },
             "target": {
               "cell": "495861a7-c88c-47ed-bc87-39a8a3f659a7"
-            },
-            "labels": [
-              "Public Key"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1373,15 +1373,15 @@
               ]
             },
             "id": "7a466873-2777-477b-bbea-551550ef9ac7",
+            "labels": [
+              "Login"
+            ],
             "source": {
               "cell": "a1daa758-ab95-4595-905e-00967a950f83"
             },
             "target": {
               "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
             },
-            "labels": [
-              "Login"
-            ],
             "vertices": [
               {
                 "x": 320,
@@ -2154,8 +2154,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "72ac07d8-7f5d-4366-bbe6-ef0674b8a8d0",
             "zIndex": 28,
+            "id": "72ac07d8-7f5d-4366-bbe6-ef0674b8a8d0",
             "data": {
               "type": "tm.Process",
               "name": "Export \nProzess",
