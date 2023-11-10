@@ -1278,8 +1278,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1295,7 +1294,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Auth Challenge",
+              "name": "Log(Login,OTT,Phone Number)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1303,37 +1302,27 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "6eba64e4-afc2-4ac6-8343-a75b742e3e94",
-                  "title": "MitM zw. LogIn und 2FA",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Zwischen dem Login-System und dem 2FA Dienst kann sich ein Angreifer zwischenschalten und die Daten abfangen, überwachen und sogar manipulieren. Dies passiert wenn die Daten unverschlüsselt übermittelt werden\n\nCAPEC ID: 94\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\ndread -> 6,6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 26,
-                  "score": "6.6"
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
-            "id": "85d62260-98b8-43df-818a-a0ba027cc053",
+            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
             "labels": [
-              "Auth Challenge"
+              "Log(Login,OTT,Phone Number)"
             ],
             "source": {
-              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
+              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
             },
             "target": {
-              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
+              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
             },
             "vertices": [
               {
-                "x": 610,
-                "y": -30
+                "x": 970,
+                "y": -240
+              },
+              {
+                "x": 970,
+                "y": -280
               }
             ]
           },
@@ -1392,13 +1381,20 @@
             },
             "labels": [
               "Login"
+            ],
+            "vertices": [
+              {
+                "x": 320,
+                "y": 1
+              }
             ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1414,7 +1410,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Log(Login,OTT,Phone Number)",
+              "name": "Auth Challenge",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1422,27 +1418,37 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "6eba64e4-afc2-4ac6-8343-a75b742e3e94",
+                  "title": "MitM zw. LogIn und 2FA",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Zwischen dem Login-System und dem 2FA Dienst kann sich ein Angreifer zwischenschalten und die Daten abfangen, überwachen und sogar manipulieren. Dies passiert wenn die Daten unverschlüsselt übermittelt werden\n\nCAPEC ID: 94\nMITRE: Encrypt Sensitive Information -> ID T1557\n\nDamage: 8 hoch\nReproducibility: 6 mittel\nExploitability: 7 tendiert hoch\nAffected Users: 8 hoch\nDiscoverability: 4 niedrig\n\ndread -> 6,6",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "6.6"
+                }
+              ]
             },
-            "id": "0adecfd0-ab97-4da7-9861-3f06796d236a",
+            "id": "85d62260-98b8-43df-818a-a0ba027cc053",
             "labels": [
-              "Log(Login,OTT,Phone Number)"
+              "Auth Challenge"
             ],
             "source": {
-              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
+              "cell": "38229611-4c6e-483a-b2c3-52325ce44261"
             },
             "target": {
-              "cell": "2852bc6a-a17a-4dfe-a7b1-faf500828b99"
+              "cell": "6adbfb13-ecd2-4b2d-b038-543085058199"
             },
             "vertices": [
               {
-                "x": 970,
-                "y": -240
-              },
-              {
-                "x": 970,
-                "y": -280
+                "x": 610,
+                "y": -30
               }
             ]
           },
@@ -2165,12 +2171,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Export Tool hat Cache mit unverschlüsselten Daten\nCAPEC-204: Lifting Sensitive Data Embedded in Cache\nMonitor for unexpected/abnormal access to files that may be malicious collection of local data, such as user files (pdf, .docx, .jpg, etc.) or local databases.\nD \nR \nE\nA\nD",
+                  "description": "Export Tool hat Cache mit unverschlüsselten Daten\nCAPEC-204: Lifting Sensitive Data Embedded in Cache\nMonitor for unexpected/abnormal access to files that may be malicious collection of local data, such as user files (pdf, .docx, .jpg, etc.) or local databases.\nD 6\nR  9\nE 7\nA 4\nD 9",
                   "mitigation": "Data Loss Prevention Data loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted M1057 ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 37,
-                  "score": ""
+                  "score": "7"
                 }
               ]
             }
